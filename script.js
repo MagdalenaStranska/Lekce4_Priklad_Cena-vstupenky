@@ -45,3 +45,32 @@ document.body.innerHTML += '<p>' + 'Cena vstupného: ' + cena + ' EUR' + '</p>'
 // }
 // cena = Math.ceil(cena);
 // document.body.innerHTML += `<p>Cena lístku je ${cena} €.`;
+
+// Druhá možnost, plnou cenu bereme jako základní a v if testujeme jenom výjimky:
+
+// const plnaCena = 12;
+// let cena = plnaCena;
+// const age = Number(prompt('Zadejte svůj věk:'));
+// if (age < 6) {
+//   cena = 0;
+// } else if (age >= 6 && age <= 26) {
+//   cena = plnaCena * 0.65;
+// } else if (age > 64) {
+//   cena = plnaCena * 0.5;
+// }
+// cena = Math.ceil(cena);
+// document.body.innerHTML += `<p>Cena lístku je ${cena} €.`;
+
+// Pro fajnšmekry třetí možnost s operátorem *=, který funguje podobně jako +=, ale pro násobení. Tato možnost neodpovídá přesně zadání, protože vůbec nepotřebujeme proměnnou plnaCena:
+
+// let cena = 12;
+// const age = Number(prompt('Zadejte svůj věk:'));
+// if (age < 6) {
+//   cena = 0;
+// } else if (age >= 6 && age <= 26) {
+//   cena *= 0.65;
+// } else if (age > 64) {
+//   cena *= 0.5;
+// }
+// cena = Math.ceil(cena);
+// document.body.innerHTML += `<p>Cena lístku je ${cena} €.`;
